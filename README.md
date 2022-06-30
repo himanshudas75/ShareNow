@@ -35,5 +35,3 @@ The other users will then be able to see and download all the files uploaded by 
     python manage.py runserver
     ```
 - A local instance of the web-app will be started on: http://127.0.0.1:8000/
-
-**Note:** Some test files, and a test user with credentials **test:Test@123** is stored initially in the database
