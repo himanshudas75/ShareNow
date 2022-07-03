@@ -18,6 +18,13 @@ The other users will then be able to see and download all the files uploaded by 
 - Bootstrap
 - JavaScript
 
+### Note:
+To generate a secret key, you need to install django (**pip install django**) and then run the following Python script:
+```py
+from django.core.management.utils import get_random_secret_key
+get_random_secret_key()
+```
+
 ## Steps to deploy:
 - Make sure you have **docker** and **docker-compose** installed.
 - Clone the repository.
