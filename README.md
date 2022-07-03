@@ -19,19 +19,17 @@ The other users will then be able to see and download all the files uploaded by 
 - JavaScript
 
 ## Steps to deploy:
-- Create a python virtual environment:
+- Make sure you have **docker** and **docker-compose** installed.
+- Clone the repository.
     ```bash
-    python -m venv env
+    git clone https://github.com/himanshudas75/ShareNow.git
     ```
-    Activate it using the **Activate.ps1**/**activate.bat** on Windows, or **activate** on MAC/Linux.
-- Go to the project folder, and install the requirements:
+- cd into the folder:
     ```bash
-    pip install -r requirements.txt
+    cd ShareNow
     ```
-- Run the following three commands to deploy:
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    python manage.py runserver
+- Run the docker-compose file:
     ```
-- A local instance of the web-app will be started on: http://127.0.0.1:8000/
+    sudo docker-compose up
+    ```
+- A local instance of the web-app will be started on: http://127.0.0.1:8500/
