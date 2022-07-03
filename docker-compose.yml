@@ -3,6 +3,7 @@ services:
   sharenow:
     container_name: sharenow-container
     build:
+      context: .
       dockerfile: Dockerfile
       target: sharenow
     volumes:
@@ -11,6 +12,7 @@ services:
   nginx:
     container_name: nginx-container
     build:
+      context: .
       dockerfile: Dockerfile
       target: nginx
     volumes:
